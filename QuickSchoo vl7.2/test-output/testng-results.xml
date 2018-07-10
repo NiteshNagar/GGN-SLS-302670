@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="19" started-at="2018-06-19T11:23:13Z" finished-at="2018-06-19T11:23:13Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="19" started-at="2018-06-19T11:23:13Z" finished-at="2018-06-19T11:23:13Z">
+      <class name="TestNG.Test1">
+        <test-method status="PASS" signature="beforsuit()[pri:0, instance:TestNG.Test1@12d3247]" name="beforsuit" is-config="true" duration-ms="8" started-at="2018-06-19T11:23:13Z" finished-at="2018-06-19T11:23:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforsuit -->
+        <test-method status="PASS" signature="befortestmethod()[pri:0, instance:TestNG.Test1@12d3247]" name="befortestmethod" is-config="true" duration-ms="0" started-at="2018-06-19T11:23:13Z" finished-at="2018-06-19T11:23:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befortestmethod -->
+        <test-method status="PASS" signature="beforclass()[pri:0, instance:TestNG.Test1@12d3247]" name="beforclass" is-config="true" duration-ms="0" started-at="2018-06-19T11:23:13Z" finished-at="2018-06-19T11:23:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforclass -->
+        <test-method status="PASS" signature="BeforMethod()[pri:0, instance:TestNG.Test1@12d3247]" name="BeforMethod" is-config="true" duration-ms="1" started-at="2018-06-19T11:23:13Z" finished-at="2018-06-19T11:23:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforMethod -->
+        <test-method status="PASS" signature="BeforMethod2()[pri:0, instance:TestNG.Test1@12d3247]" name="BeforMethod2" is-config="true" duration-ms="0" started-at="2018-06-19T11:23:13Z" finished-at="2018-06-19T11:23:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforMethod2 -->
+        <test-method status="PASS" signature="method1()[pri:0, instance:TestNG.Test1@12d3247]" name="method1" duration-ms="3" started-at="2018-06-19T11:23:13Z" finished-at="2018-06-19T11:23:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method1 -->
+        <test-method status="PASS" signature="Aftermethod()[pri:0, instance:TestNG.Test1@12d3247]" name="Aftermethod" is-config="true" duration-ms="0" started-at="2018-06-19T11:23:13Z" finished-at="2018-06-19T11:23:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftermethod -->
+        <test-method status="PASS" signature="BeforMethod()[pri:0, instance:TestNG.Test1@12d3247]" name="BeforMethod" is-config="true" duration-ms="1" started-at="2018-06-19T11:23:13Z" finished-at="2018-06-19T11:23:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforMethod -->
+        <test-method status="PASS" signature="method2()[pri:0, instance:TestNG.Test1@12d3247]" name="method2" duration-ms="0" started-at="2018-06-19T11:23:13Z" finished-at="2018-06-19T11:23:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method2 -->
+        <test-method status="PASS" signature="BeforMethod2()[pri:0, instance:TestNG.Test1@12d3247]" name="BeforMethod2" is-config="true" duration-ms="0" started-at="2018-06-19T11:23:13Z" finished-at="2018-06-19T11:23:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforMethod2 -->
+        <test-method status="PASS" signature="Aftermethod()[pri:0, instance:TestNG.Test1@12d3247]" name="Aftermethod" is-config="true" duration-ms="0" started-at="2018-06-19T11:23:13Z" finished-at="2018-06-19T11:23:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftermethod -->
+        <test-method status="PASS" signature="aftertestmethod()[pri:0, instance:TestNG.Test1@12d3247]" name="aftertestmethod" is-config="true" duration-ms="0" started-at="2018-06-19T11:23:13Z" finished-at="2018-06-19T11:23:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftertestmethod -->
+        <test-method status="PASS" signature="aftersuit()[pri:0, instance:TestNG.Test1@12d3247]" name="aftersuit" is-config="true" duration-ms="0" started-at="2018-06-19T11:23:13Z" finished-at="2018-06-19T11:23:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftersuit -->
+      </class> <!-- TestNG.Test1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
