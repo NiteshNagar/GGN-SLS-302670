@@ -51,7 +51,7 @@ public class htmlUnitYest {
             	    ArrayList<String> tabs2 = new ArrayList<String> (chrome.getWindowHandles());
             	    chrome.switchTo().window(tabs2.get(1));
             	    System.out.println("Nitesh");
-            	    System.out.println("GitHUB Test");
+            	    System.out.println("GitHUB");
                     
             	    
             	    // for May Task 	       
