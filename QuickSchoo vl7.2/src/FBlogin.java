@@ -38,7 +38,7 @@ public class FBlogin {
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(".//*[@id='u_0_2']")));
 
 		driver.findElement(By.xpath(".//*[@id='u_0_2']")).click();
-		System.out.println("Logged in successfully");
+		System.out.println("Logged in successful");
 
 		Actions action = new Actions(driver);
 		action.sendKeys(Keys.ESCAPE);
