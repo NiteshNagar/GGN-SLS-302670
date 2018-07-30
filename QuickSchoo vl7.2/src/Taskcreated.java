@@ -22,28 +22,27 @@ public static void main(String[] args) throws IOException, InterruptedException 
 		System.setProperty("webdriver.chrome.driver", "D:\\Automation\\Eclipse\\chromedriver.exe");
 		WebDriver chrome = new ChromeDriver();
 		
-		ct2._webDriver = chrome;
-		
-		
+		ct2._webDriver = chrome;		
 		String BaseUrl = "https://www.iniitian.com/";
 
-		FileInputStream fio = new FileInputStream("D:\\Automation\\ExcelFiles\\Automation.xlsx");
+		FileInputStream fio = new FileInputStream("D:\\Automation\\Excelfiles\\Automation.xlsx");
 		XSSFWorkbook book = new XSSFWorkbook(fio);
-		XSSFSheet sh = book.getSheetAt(0);
-	//	ct2._xSSFSheet =sh;				
+		XSSFSheet sh = book.getSheet("Inniitian");
+		ct2._xSSFSheet = sh;
 		
+		
+			
 		chrome.get(BaseUrl);
 		chrome.manage().window().maximize();
 		chrome.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
 
 		
-		chrome.findElement(By.xpath("/html/body/form/div/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td[2]/input")).sendKeys(sh.getRow(1).getCell(0).getStringCellValue());
+		chrome.findElement(By.xpath("html/body/div[1]/div/section/div/div[2]/form/div[4]/fieldset/div/div/center/div/table/tbody/tr[2]/td[6]/a")).sendKeys(sh.getRow(1).getCell(0).getStringCellValue());
 		chrome.findElement(By.name("emppassword")).sendKeys(sh.getRow(1).getCell(1).getStringCellValue());
 
 	
 		
 		chrome.findElement(By.xpath("/html/body/form/div/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[4]/td/input")).click();
-		//chrome.findElement(By.id("hlkAttendanceSystem")).click();
 		
 		book.close();
 
@@ -57,10 +56,9 @@ public static void main(String[] args) throws IOException, InterruptedException 
 	    
 	
 	    // for May Task 	       
-		chrome.findElement(By.xpath("html/body/div[1]/div/section/div/div[2]/form/div[4]/fieldset/div/div/center/div/table/tbody/tr[13]/td[6]/a")).click();
-		//chrome.findElement(By.xpath("html/body/div[1]/div/section/div/div[2]/form/div[4]/fieldset/div/div/center/div/table/tbody/tr[2]/td[6]/a")).click();
-		
-		for(int p=2; p<=100; p++){
+		chrome.findElement(By.xpath("html/body/div[1]/div/section/div/div[2]/form/div[4]/fieldset/div/div/center/div/table/tbody/tr[3]/td[6]/a")).click();
+			
+		for(int p=1; p<=100; p++){
 			
 			ct2.p=p;
 		
@@ -74,7 +72,7 @@ public static void main(String[] args) throws IOException, InterruptedException 
 
 		
 		//Date pick from excel
-		XSSFSheet sh3 = book.getSheetAt(3);
+		XSSFSheet sh3 = book.getSheet("New TT");
 		ct2._xSSFSheet = sh3;
 		
 		//Excel Date Original 
@@ -429,6 +427,7 @@ public static void main(String[] args) throws IOException, InterruptedException 
 	//	chrome.findElement(By.xpath(".//*[@id='ctl00_MainContent_lnksaveTask']")).click();
 		Thread.sleep(2000);
 		chrome.findElement(By.xpath(".//*[@id='ctl00_MainContent_lnksaveTask']")).click();
+		//chrome.findElement(By.xpath(".//*[@id='ctl00_MainContent_lnksaveTask']")).click();
 		Thread.sleep(2000);
 		
 		/*
@@ -455,16 +454,18 @@ public static void filldate(timeSheetmethodvariables receiverobj2) throws Interr
 	receiverobj2._webDriver.findElement(By.xpath(".//*[@id='txtTaskDuration']")).sendKeys(receiverobj2._xSSFSheet.getRow(receiverobj2.p).getCell(4).getStringCellValue());
 	
 	//Set pecentage
-		 receiverobj2._webDriver.findElement(By.xpath("//*[@id='TxtCompletion']")).sendKeys("100");
+	 receiverobj2._webDriver.findElement(By.xpath("//*[@id='TxtCompletion']")).sendKeys("100");
 	
+	//set assign to 
+		receiverobj2._webDriver.findElement(By.xpath(".//*[@id='chkself']")).click();
+	 
 	Thread.sleep(2000);
 	//select Nature of task
 	WebElement ProductName=  receiverobj2._webDriver.findElement(By.xpath(".//*[@id='ddlNatureTask']"));
 	Select NatureOfTask = new Select(ProductName);
 	NatureOfTask.selectByVisibleText(receiverobj2._xSSFSheet.getRow(receiverobj2.p).getCell(6).getStringCellValue());
 	
-	//set assign to 
-//		receiverobj2._webDriver.findElement(By.xpath(".//*[@id='chkself']")).click();
+	
 			 
 }                                   
 
