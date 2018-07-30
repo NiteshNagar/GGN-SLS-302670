@@ -45,7 +45,7 @@ public static void main(String[] args) throws IOException, InterruptedException 
 
 		chrome.get("https://pd2.iniitian.com/ess/Attendance/Entry/Attendancetms_Calendar.aspx");
 
-		for(int y=2; y<=100; y++){
+		for(int y=1; y<=100; y++){
 			
 		//Open Fill detail page 01 June 2018
 		chrome.get("https://pd2.iniitian.com/ess/Attendance/Entry/TimeSheet_Maintenance.aspx?P1=d4oty0zJ8yVCeFGvWFHJzQ%3d%3d&P2=_gtknNE9foHOhFB899j3ow%3d%3d");
@@ -59,7 +59,7 @@ public static void main(String[] args) throws IOException, InterruptedException 
 		chrome.findElement(By.xpath("html/body/div[3]/div[1]/table/thead/tr[1]/th[2]")).getText();
 		int FrommonthOnSite = 6;
 		
-		XSSFSheet sh3 = book.getSheetAt(3);
+		XSSFSheet sh3 = book.getSheetAt(2);
 		
 		//Get month from Sheet
 		String datefromexcelMonth = sh3.getRow(y).getCell(8).getStringCellValue();
